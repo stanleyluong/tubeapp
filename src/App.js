@@ -2,7 +2,6 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import youtube from './api/youtube'
 import { SearchBar, VideoDetail, VideoList } from './components'
-console.log(process.env.REACT_APP_API_KEY)
 class App extends React.Component {
 
   state = {
@@ -17,8 +16,6 @@ class App extends React.Component {
   handleSubmit = async (searchTerm) => {
     const response = await youtube.get('search', { params: { q: searchTerm }})
     this.setState({ videos: response.data.items, selectedVideo: response.data.items[0] })
-    
-    console.log('response',response.data.items)
   }
 
   onVideoSelect = (video) => {
