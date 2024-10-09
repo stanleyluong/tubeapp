@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/tubeapp/static/js/main.d87f8498.js",
+    "main.js": "/tubeapp/static/js/main.cfefceb2.js",
     "index.html": "/tubeapp/index.html",
-    "main.d87f8498.js.map": "/tubeapp/static/js/main.d87f8498.js.map"
+    "main.cfefceb2.js.map": "/tubeapp/static/js/main.cfefceb2.js.map"
   },
   "entrypoints": [
-    "static/js/main.d87f8498.js"
+    "static/js/main.cfefceb2.js"
   ]
 }
