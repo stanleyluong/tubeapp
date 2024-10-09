@@ -1,7 +1,7 @@
-import React from 'react';
-import { Grid, Box, Container } from '@material-ui/core';
-import youtube from './api/youtube';
-import { SearchBar, VideoDetail, VideoList } from './components';
+import React from "react";
+import { Grid, Box, Container } from "@material-ui/core";
+import youtube from "./api/youtube";
+import { SearchBar, VideoDetail, VideoList } from "./components";
 
 class App extends React.Component {
   state = {
@@ -10,12 +10,15 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.handleSubmit('React tutorial');
+    this.handleSubmit("React tutorial");
   }
 
   handleSubmit = async (searchTerm) => {
-    const response = await youtube.get('search', { params: { q: searchTerm } });
-    this.setState({ videos: response.data.items, selectedVideo: response.data.items[0] });
+    const response = await youtube.get("search", { params: { q: searchTerm } });
+    this.setState({
+      videos: response.data.items,
+      selectedVideo: response.data.items[0],
+    });
   };
 
   onVideoSelect = (video) => {

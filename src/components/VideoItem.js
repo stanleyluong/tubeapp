@@ -1,5 +1,5 @@
-import React from 'react';
-import { Grid, Paper, Typography } from '@material-ui/core';
+import React from "react";
+import { Grid, Paper, Typography } from "@material-ui/core";
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
@@ -7,14 +7,14 @@ const VideoItem = ({ video, onVideoSelect }) => {
       <Paper
         onClick={() => onVideoSelect(video)}
         style={{
-          display: 'flex',
-          alignItems: 'center',
-          cursor: 'pointer',
-          padding: '10px',
+          display: "flex",
+          alignItems: "center",
+          cursor: "pointer",
+          padding: "10px",
         }}
       >
         <img
-          style={{ marginRight: '20px', width: '120px' }}
+          style={{ marginRight: "20px", width: "120px" }}
           alt={video.snippet.title}
           src={video.snippet.thumbnails.default.url}
         />

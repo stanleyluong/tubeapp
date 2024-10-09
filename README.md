@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+Sure! Here’s a `README.md` template tailored for your YouTube app project that uses React, Axios, Material-UI, and the YouTube Data API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `README.md`:
 
-## Available Scripts
+````md
+# TubeApp
 
-In the project directory, you can run:
+TubeApp is a YouTube video search application built with React. It allows users to search for videos using the YouTube Data API and displays a list of results. Users can click on a video to watch it directly within the app.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Demo](#demo)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Search for YouTube videos by entering keywords.
+- Display a list of video results with thumbnails.
+- Click on a video to watch it within the app.
+- Responsive layout built using Material-UI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+Check out the live demo [here](http://stanleyluong.github.io/tubeapp).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project is built using the following technologies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: A JavaScript library for building user interfaces.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **YouTube Data API v3**: Provides access to YouTube data, such as videos, playlists, and channels.
+- **Material-UI**: A popular React UI framework.
+- **GitHub Pages**: For hosting the application.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/stanleyluong/tubeapp.git
+   cd tubeapp
+   ```
+````
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install the dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To use the YouTube Data API, you will need to set up your environment variables:
 
-### Code Splitting
+1. Create a `.env` file in the root directory of your project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   REACT_APP_API_KEY=your_youtube_api_key
+   REACT_APP_API_URL=https://www.googleapis.com/youtube/v3
+   ```
 
-### Analyzing the Bundle Size
+   Replace `your_youtube_api_key` with your actual YouTube API key.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Save the file and restart your app if it's already running.
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To run the app in development mode:
 
-### Advanced Configuration
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Deployment
+To build the project for production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm run build
+```
 
-### `npm run build` fails to minify
+This command will create an optimized production build in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To deploy the app to GitHub Pages, run:
+
+```bash
+npm run deploy
+```
+
+## Contributing
+
+If you'd like to contribute to this project, please feel free to submit a pull request or open an issue. Any contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License.
+
+```
+
+### Key Sections:
+
+- **Features**: Summarizes the key functionality of your application.
+- **Demo**: Includes a link to the live deployment of your app.
+- **Technologies**: Lists the core technologies used in the project.
+- **Installation**: Provides instructions for cloning the repository and installing dependencies.
+- **Environment Variables**: Explains how to configure the `.env` file with the YouTube API key and base URL.
+- **Usage**: Offers commands to run the app locally, build for production, and deploy.
+- **Contributing**: Encourages others to contribute to the project.
+- **License**: Specifies that the project is licensed under MIT.
+
+Feel free to customize the content further as needed. Let me know if you need any other adjustments!
+```
